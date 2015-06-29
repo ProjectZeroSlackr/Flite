@@ -67,7 +67,7 @@ LIBDIR=$(BUILDDIR)/lib
 BUILDDIRS=$(OBJDIR) $(BINDIR) $(LIBDIR)
 
 FLITELIBS = $(BUILDDIR)/lib/libflite.a
-LDFLAGS += -L$(BUILDDIR)/lib -lflite -lm $(AUDIOLIBS) $(OTHERLIBS)
+LDFLAGS += -L$(BUILDDIR)/lib -lflite -lm $(AUDIOLIBS) $(OTHERLIBS) -elf2flt
 
 FULLOBJS = $(OBJS:%=$(OBJDIR)/%)
 ifdef SHFLAGS
